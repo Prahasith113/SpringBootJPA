@@ -66,13 +66,26 @@ public class SpringJpaApplication {
 //		studentRepository.deleteAll();
 		
 //update data
-		Optional<Student> option = studentRepository.findById(3);
-		Student stud = option.get();
-		stud.setName("bumrah");
-		stud.setCity("ahmedabad");
-		stud.setHobbie("pace bowler");
+//		Optional<Student> option = studentRepository.findById(3);
+//		Student stud = option.get();
+//		stud.setName("bumrah");
+//		stud.setCity("ahmedabad");
+//		stud.setHobbie("pace bowler");
+//		
+//		studentRepository.save(stud);
+//	
 		
-		studentRepository.save(stud);
-	
+		
+//using @Query		
+//		List<Student> selectAllStudents = studentRepository.selectAllStudents();
+//		selectAllStudents.forEach(s->{
+//			System.out.println(s);
+//		});
+		
+//using @Query and @Param
+//		List<Student> selectAllStudents = studentRepository.getStudent("virat");
+//		selectAllStudents.forEach(s->{
+//			System.out.println(s);
+//		});
 	}
 }
